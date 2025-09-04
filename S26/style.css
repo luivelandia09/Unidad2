@@ -1,0 +1,81 @@
+/* Responsive: inputs de nombres y apellidos en fila para pantallas grandes */
+@media (min-width: 700px) {
+    .fila-nombres {
+        display: flex;
+        gap: 16px;
+    }
+    .fila-nombres input {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:invalid {
+    border-color: #e74c3c;
+    background-color: #fceaea;
+}
+
+input:valid {
+    border-color: #2ecc71;
+    background-color: #e8f9f1;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #eef7fd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #2980b9;
+}
